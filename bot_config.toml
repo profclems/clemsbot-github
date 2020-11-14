@@ -1,0 +1,40 @@
+# Example configuration file
+
+[bot]
+name="clemsbot" # The name of your bot.
+# You must register a GitHub and GitLab account
+# for your bot with the same name given in this
+# configuration file.
+email="clemsbot@users.noreply.github.com"
+
+[server]
+domain="clemsbot.herokuapp.com" # URL of the server
+# port="8000" # The port number the server is listening on.
+# If commented, the port number is read from the
+# PORT environment variable. If this environment
+# variable is not found, the port is set to 8000.
+# If you deploy the server to Heroku, this line
+# must be commented: Heroku provides the PORT
+# environment variable.
+
+# Settings for GitHub
+[github]
+# If commented, these secrets are read from environment
+# variables: GITHUB_ACCESS_TOKEN and GITHUB_WEBHOOK_SECRET
+api_token="e43091b77062cfb114f6988ee1e0f1e861a3a429"
+webhook_secret=""
+app_id="88683" # The GitHub App ID
+
+# Settings for GitLab
+[gitlab]
+# If commented, this secret is read from the environment
+# variable GITLAB_ACCESS_TOKEN
+api_token="secret"
+
+# Correspondence between GitHub & GitLab repositories
+[mappings]
+  [mappings.glab]
+  github="profclems/glab"
+  # The GitHub repository URL being https://github.com/profclems/glab
+  gitlab="profclems/glab"
+  # The GitLab repository URL being https://gitlab.com/profclems/glab
