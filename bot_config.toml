@@ -29,7 +29,7 @@ app_id="88683" # The GitHub App ID
 [gitlab]
 # If commented, this secret is read from the environment
 # variable GITLAB_ACCESS_TOKEN
-api_token="secret"
+# api_token="secret"
 
 # Correspondence between GitHub & GitLab repositories
 [mappings]
