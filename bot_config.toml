@@ -21,7 +21,7 @@ domain="clemsbot.herokuapp.com" # URL of the server
 [github]
 # If commented, these secrets are read from environment
 # variables: GITHUB_ACCESS_TOKEN and GITHUB_WEBHOOK_SECRET
-api_token="e43091b77062cfb114f6988ee1e0f1e861a3a429"
+# api_token=""
 webhook_secret=""
 app_id="88683" # The GitHub App ID
 
