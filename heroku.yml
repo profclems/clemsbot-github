@@ -1,6 +1,8 @@
+setup:
+  command:
+    - echo "$GITHUB_PKG_REGISTRY_PASSWORD" | docker login docker.pkg.github.com -u "$GITHUB_PKG_REGISTRY_USERNAME" --password-stdin
 build:
   docker:
     web: Dockerfile
-    command: echo $GITHUB_PKG_REGISTRY_PASSWORD | docker login docker.pkg.github.com -u "$GITHUB_PKG_REGISTRY_USERNAME" --password-stdin
 run:
   web: bundle exec puma -C config/puma.rb
