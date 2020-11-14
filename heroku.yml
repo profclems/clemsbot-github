@@ -1,5 +1,7 @@
 build:
   docker:
     web: Dockerfile
+    command:
+      - docker login -u $GITHUB_PKG_REGISTRY_USERNAME -p GITHUB_PKG_REGISTRY_PASSWORD
 run:
   web: bundle exec puma -C config/puma.rb
